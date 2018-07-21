@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="cssfiles/main.css">
     <meta name="viewport" content="width=device-width, minimum-scale=1,maximum-scale=1">
     <script src="jsfiles/jquery-3.3.1.min.js"></script>
+    <script src="jsfiles/jquery.validate.min.js"></script>
     <script src="jsfiles/main.js"></script>
 </head>
 
@@ -18,41 +19,64 @@
             </div>
             <p>Sign Up and Registration</p>
             <div class="form-container">
-                <form action="" method="GET">
+                <form action="" method="">
                     <ul class="ul-register-container">
                         <li>
-                            <div class="w">
-                                <span class="register-span span-1 icon-user-o"> Firsteeee Name :</span>
+                            <div class="firstname">
+                                <label for="firstname">
+                                    <span class="register-span span-1 icon-user-o"> First Name :</span>
+                                </label>
                             </div>
-
-                            <input type="text" name="Name" placeholder=" First Name and Last Name">
+                            <input type="text" placeholder=" First Name and Last Name">
                         </li>
                         <li>
-                            <span class="register-span span-2 icon-mail"> Email :</span>
-                            <input type="text" name="Name" placeholder=" Enter Email">
+                            <div class="form-group">
+                                <div class="email">
+                                    <label for="email">
+                                    <span class="register-span span-2 icon-mail"> Email :</span>
+                                </label>
+                                </div>
+                                <input type="email" name="email" id="email" placeholder=" Enter Email">
+                            </div>
                         </li>
                         <li>
-                            <span class="register-span span-3 icon-key-5"> Password :</span>
-                            <input type="text" name="Name" placeholder=" Enter Password">
+                            <div class="form-group">
+                                <div class="password">
+                                    <label for="password">
+                                    <span class="register-span span-3 icon-key-5"> Password :</span>
+                                </label>
+                                </div>
+                                <input type="password" name="password" id="password" placeholder=" Enter Your Password"></br>
+                                <span class="help-block"></span>
+                            </div>
                         </li>
                         <li>
-                            <span class="register-span span-4">Confirm Password :</span>
-                            <input type="text" name="Name" placeholder=" Re-Enter Password">
+                            <div class="form-group">
+                                <div class="confirmpassword">
+                                    <label for="confirmpassword">
+                                    <span class="register-span span-4">Confirm Password :</span>
+                                </label>
+                                </div>
+                                <input type="password" name="confirmpassword" id="confirmpassword" placeholder=" Re-Enter Password">
                         </li>
                         <li>
-                            <input type="submit" value="Sign Up">
+                            <div class="input-group">
+                                <input type="submit" value="Sign Up">
+                            </div>
                         </li>
                         <li class="cancel">
-                            <input type="submit" value="Cancel">
+                            <div class="input-group">
+                                <input type="submit" value="Cancel">
+                            </div>
                         </li>
                     </ul>
                 </form>
+                </div>
+                <a href="" class="register-a">
+                    <p> Sign In</p>
+                </a>
             </div>
-            <a href="" class="register-a">
-                <p> Sign In</p>
-            </a>
         </div>
-    </div>
 </body>
 
 </html>
